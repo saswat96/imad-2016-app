@@ -5,9 +5,9 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-
-var articleOne = {
-    title: "Article One | Saswat Panigrahi",
+var articles = {
+articleOne : {
+    title: 'Article One | Saswat Panigrahi',
     heading: "Article One",
     date: "October 30, 2016",
     content:` 
@@ -40,6 +40,77 @@ var articleOne = {
         </p>` 
     
     
+},
+articleTwo : { 
+    title: 'Article Two | Saswat Panigrahi',
+    heading: "Article Two",
+    date: "October 30, 2016",
+    content:` 
+         <p>
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article.
+        </p>
+                        
+        <p>
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my Second article.This is my content area for my second article
+        </p>
+                        
+        <p>
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article
+        </p>
+        
+        <p>
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article.
+                This is my content area for my second article.This is my content area for my second article
+        </p>` 
+    
+},
+articleThree : {
+title: 'Article Third | Saswat Panigrahi',
+    heading: "Article Third",
+    date: "October 30, 2016",
+    content:` 
+         <p>
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article.
+        </p>
+                        
+        <p>
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article
+        </p>
+                        
+        <p>
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article
+        </p>
+        
+        <p>
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article.
+                This is my content area for my third article.This is my content area for my third article
+        </p>`     
+    
+    
+    
+}
 };
 
 function createTemplate(data){
